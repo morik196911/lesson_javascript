@@ -7,24 +7,42 @@
   <link rel="stylesheet" href="./public/css/bootstrap.css">
 </head>
 <body>
-<script async src="public/myscript/main.js"></script>
 
-  <h2 class = "text-success">Total one</h2>
   <script>
-    document.write("The first programm Javascript")
-  </script>
-   <h2 class = "text-secondary">Total two</h2>
-  <script>
-    document.write("The second programm Javascript")
-    const sum = 2 + 5;
-    document.write("<br/>"+sum)
-    document.write("<br/>");
-    document.write("Hello");
-    {
-      document.write("<br/>How about you");
-      document.write("<br/>Are you sleeping ?");
-    }
-    document.write("<br/> By");
+let user , t, foo = ()=>{return 258} ;
+user = "Toni";
+const name = "Gena";
+console.log(name)
+const arr = ["Boolean","String","BigInt","Undefined",
+"Symbol","Null","Number","Object"]
+
+document.write("<ul>");
+for(let item of arr){
+  document.write("<li class = 'text-primary'>"+item + "</li>");
+}
+document.write("</ul>");
+document.write("<br/>"+Number.MIN_VALUE)
+document.write("<br/>"+Number.POSITIVE_INFINITY)
+document.write("<br/> type param "+typeof arr)
+let ff = `My name ${name}`
+document.write("<br/>"+ff);
+const text = `Hello
+My family
+Mother
+Fathre
+`
+document.write(text)
+console.log(text)
+let data , email = null;
+document.write("<br/>"+data + " == "+email)
+const User = {};
+User.name = "Lena";
+User.age = 25;
+document.write("<br/> Object typeof "+typeof User)
+console.log(User)
+document.write("<br/> Object typeof "+Object.entries(User))
+let id ;
+document.write("<br/>  typeof "+typeof id)
   </script>
 
 
