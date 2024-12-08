@@ -9,40 +9,37 @@
 <body>
 
   <script>
-let user , t, foo = ()=>{return 258} ;
-user = "Toni";
-const name = "Gena";
-console.log(name)
-const arr = ["Boolean","String","BigInt","Undefined",
-"Symbol","Null","Number","Object"]
+const x = 50 + 18;
+const y = 60 - 25 ;
+const mult = 25 * 6 ;
+const del = 685 / 35 ;
+console.log("Result ", x ,y ,mult, Math.floor(del))
+let num = null ;
+document.write("<br/> Math " + num++ )
+num += 25 
+document.write("<br/> After  " + ++num )
+num **= 2
+document.write("<br/> After  " + ++num )
+num /= 4
 
-document.write("<ul>");
-for(let item of arr){
-  document.write("<li class = 'text-primary'>"+item + "</li>");
-}
-document.write("</ul>");
-document.write("<br/>"+Number.MIN_VALUE)
-document.write("<br/>"+Number.POSITIVE_INFINITY)
-document.write("<br/> type param "+typeof arr)
-let ff = `My name ${name}`
-document.write("<br/>"+ff);
-const text = `Hello
-My family
-Mother
-Fathre
-`
-document.write(text)
-console.log(text)
-let data , email = null;
-document.write("<br/>"+data + " == "+email)
-const User = {};
-User.name = "Lena";
-User.age = 25;
-document.write("<br/> Object typeof "+typeof User)
-console.log(User)
-document.write("<br/> Object typeof "+Object.entries(User))
-let id ;
-document.write("<br/>  typeof "+typeof id)
+document.write("<br/> Delete %  " + (num % 182.5) )
+let result = (25 % 8 > 2) ? "number more ":"Number then"
+console.log(result)
+let rbit = 0b1100;
+document.write("<br/> Thwo " + rbit)
+document.write("<br/> ####################################################<br/> ")
+console.log(true && false);
+console.log(true && true);
+
+const money = 980;
+const age = 21 ;
+const tred = money < 1000 && age > 22
+document.write("<br/> Logica "+tred)
+document.write("<br/> ####################################################<br/> ")
+let dd = 25;
+dd < 25 && console.log("THis age < 25");
+dd >= 25 && console.log("Tghis is ok");
+
   </script>
 
 
