@@ -9,40 +9,16 @@
 <body>
 
   <script>
-let user , t, foo = ()=>{return 258} ;
-user = "Toni";
-const name = "Gena";
-console.log(name)
-const arr = ["Boolean","String","BigInt","Undefined",
-"Symbol","Null","Number","Object"]
-
-document.write("<ul>");
-for(let item of arr){
-  document.write("<li class = 'text-primary'>"+item + "</li>");
-}
-document.write("</ul>");
-document.write("<br/>"+Number.MIN_VALUE)
-document.write("<br/>"+Number.POSITIVE_INFINITY)
-document.write("<br/> type param "+typeof arr)
-let ff = `My name ${name}`
-document.write("<br/>"+ff);
-const text = `Hello
-My family
-Mother
-Fathre
-`
-document.write(text)
-console.log(text)
-let data , email = null;
-document.write("<br/>"+data + " == "+email)
-const User = {};
-User.name = "Lena";
-User.age = 25;
-document.write("<br/> Object typeof "+typeof User)
-console.log(User)
-document.write("<br/> Object typeof "+Object.entries(User))
-let id ;
-document.write("<br/>  typeof "+typeof id)
+const x = 25,y = 80;
+const res = (x < y) ? true + x:false + y ;
+document.write(res+"<br/>");
+const foo = "Hello" ?? "Nanito"
+document.write(foo+"<br/>");
+let u = null;
+let q = "good";
+let www = u ??= q
+document.write(www);
+document.write("add news")
   </script>
 
 
