@@ -9,40 +9,45 @@
 <body>
 
   <script>
-let user , t, foo = ()=>{return 258} ;
-user = "Toni";
-const name = "Gena";
-console.log(name)
-const arr = ["Boolean","String","BigInt","Undefined",
-"Symbol","Null","Number","Object"]
+const people = ["user","Hena"];
+const foo = Array(3);
+foo[0] = "f0";
+foo[1] = "f1";
+//foo[2] = "f2";
+//foo[3] = "f3";
+console.log(foo)
+people[5] = "Tom";
+console.log(people)
+const number = [[1,2,3],[5,6,7]]
+ const people2= [
+        ["Tom", 25, false],
+        ["Bill", 38, true],
+        ["Alice", 21, false]
+]
+console.log(people2[1][0])
+let foo1 = 5;
+switch (foo1) {
+  case 5:
+    console.log("5 ok")
+    foo1 += 25
+    //break;
+    case 4:
+    console.log("4 ok", foo1)
+    break;
+    case 3:
+    console.log("3 ok")
+    //break;
 
-document.write("<ul>");
-for(let item of arr){
-  document.write("<li class = 'text-primary'>"+item + "</li>");
+  default:
+    console.log("In not number")
+    break;
 }
-document.write("</ul>");
-document.write("<br/>"+Number.MIN_VALUE)
-document.write("<br/>"+Number.POSITIVE_INFINITY)
-document.write("<br/> type param "+typeof arr)
-let ff = `My name ${name}`
-document.write("<br/>"+ff);
-const text = `Hello
-My family
-Mother
-Fathre
-`
-document.write(text)
-console.log(text)
-let data , email = null;
-document.write("<br/>"+data + " == "+email)
-const User = {};
-User.name = "Lena";
-User.age = 25;
-document.write("<br/> Object typeof "+typeof User)
-console.log(User)
-document.write("<br/> Object typeof "+Object.entries(User))
-let id ;
-document.write("<br/>  typeof "+typeof id)
+for(let i = 0; i < people.length ; i++){
+  document.write(people[i]+"<br/>")
+}
+for(let i = 0; i < 10 ; i +=2){
+  console.log(`Result ${i} == `,++i)
+}
   </script>
 
 
